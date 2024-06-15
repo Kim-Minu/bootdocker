@@ -1,5 +1,6 @@
 services:
-  bootdocker:
-    image: bootdocker:lastest
-    ports:
-      - 8082:8080
+    #image: bootdocker:lastest
+    bootdocker:
+      build: .
+      ports:
+        - 8082:8080
