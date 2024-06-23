@@ -1,6 +1,8 @@
 services:
-    #image: bootdocker:lastest
     bootdocker:
-      build: .
+      image: bootdocker:lastest
+      #build: .
       ports:
         - 8082:8080
+      volumes:
+        - ./temptFile:/var/bootdocker-file
